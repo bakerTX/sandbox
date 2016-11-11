@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/App.css';
 import Examples from './components/Examples';
 import ControlBoard from './components/ControlBoard';
 
@@ -17,6 +17,7 @@ class App extends Component {
 
         <ControlBoard />
         <Examples />
+        <div className="codeSnippetBox">Code Snippet Box</div>
 
       </div>
     );

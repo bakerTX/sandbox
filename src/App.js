@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Examples from './components/Examples';
+import ControlBoard from './components/ControlBoard';
 
 class App extends Component {
   render() {
@@ -14,9 +15,7 @@ class App extends Component {
           <a href="#">animations</a>
         </nav>
 
-        <div className="controllerBox">The Controller
-          <div className="codeSnippetBox">Code Snippet Box</div>
-        </div>
+        <ControlBoard />
         <Examples />
 
       </div>

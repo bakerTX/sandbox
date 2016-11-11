@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Paragraph from './components/Paragraph'
+import Examples from './components/Examples';
 
 class App extends Component {
   render() {
@@ -17,7 +17,7 @@ class App extends Component {
         <div className="controllerBox">The Controller
           <div className="codeSnippetBox">Code Snippet Box</div>
         </div>
-        <div className="exampleBox">Example Box</div>
+        <Examples />
 
       </div>
     );

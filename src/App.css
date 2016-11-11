@@ -1,5 +1,5 @@
 body {
-  width: 960px;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -38,10 +38,26 @@ nav {
   justify-content: center;
 }
 nav a {
-  margin: 0 17px;
+  margin: 0 3%;
   padding: 12px;
   text-decoration: none;
   border: 1px solid #AAAAAA;
   border-bottom: none;
   border-radius: 5px 5px 0px 0px;
+}
+
+/*Paragraph Example*/
+.paragraph-example {
+  margin-top:0;
+  text-align:center;
+
+}
+.paragraph-holder {
+  height: 100%;
+  display: flex;
+  background-color: blue;
+  align-items: center;
+  padding: 0 30%;
+
+
 }

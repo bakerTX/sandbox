@@ -8,7 +8,8 @@ class ControlBoard extends Component {
     super(props);
     this.state = {
       newLineHeight: 0,
-      newLetterSpacing: 0
+      newLetterSpacing: 0,
+      newFontFamily: ''
     }
 
     this._changeSnippet = this._changeSnippet.bind(this);
@@ -24,13 +25,17 @@ class ControlBoard extends Component {
       this.setState({
         newLineHeight: newValue
       })
-      }
+    } else if (which === "font-family"){
+      this.setState({
+        newFontFamily: newValue
+      })
+    }
   }
 
   render(){
     return (
       <div className="controllerBox">
-        <FontFamily />
+        <FontFamily changeSnippet={this._changeSnippet}/>
         <LineHeight changeSnippet={this._changeSnippet}/>
         <LetterSpacing changeSnippet={this._changeSnippet}/>
 
@@ -49,11 +54,9 @@ class ControlBoard extends Component {
             {`letter-spacing: `}{this.state.newLetterSpacing}{`;`}
             </pre>
           </div>
-          <div id="font-famimly-snippet">
+          <div id="font-family-snippet">
             <pre>
-            {`p {
-  line-height: `}{this.state.snippet}{`;
-}`}
+            {`font-family: `}{this.state.newFontFamily}{`;`}
             </pre>
           </div>
 

@@ -4,26 +4,22 @@ import '../../css/FontFamily.css';
 class FontFamily extends Component {
   constructor(props){
     super(props);
-    this.state = {
-      fontFamily: 'sans-serif'
-    }
+
     this._changeFontFamily = this._changeFontFamily.bind(this);
   }
   _changeFontFamily(e){
     let selectedFontFamily = e.target.value;
-    // Set state
-    if (selectedFontFamily === 'serif') {
-        this.setState({
-          fontFamily: 'serif'
-        })
-      } else if (selectedFontFamily === 'sans-serif'){
-      this.setState({
-        fontFamily: 'sans-serif'
-      })
-    }
+
+    // send newFontFamily up to the control board
+    this.props.changeSnippet('font-family', selectedFontFamily);
+
     // Change the css Class of the paragraph
     let paragraph = document.getElementById("paragraph-example");
     paragraph.style.fontFamily = selectedFontFamily;
+
+    // set the containing div of the code snippet from hidden to block
+    let snippet = document.getElementById('font-family-snippet');
+    snippet.style.display = 'block';
   }
   render() {
     return (

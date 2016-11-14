@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Paragraph from './Paragraph'
+import ParagraphExample from './Examples/ParagraphExample'
 
 
 class Examples extends Component {
   render() {
     return (
       <div className="exampleBox">
-        <Paragraph />
+        <ParagraphExample />
         {/* Perhaps here is where we will have React-Router for rendering the different element-pages */}
       </div>
     );

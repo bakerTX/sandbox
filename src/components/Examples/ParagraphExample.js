@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Paragraph extends Component {
+class ParagraphExample extends Component {
   render() {
     return (
       <div className="paragraph-holder">
@@ -11,4 +11,4 @@ class Paragraph extends Component {
   }
 }
 
-export default Paragraph;
+export default ParagraphExample;

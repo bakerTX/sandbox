@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ParagraphExample from './Examples/ParagraphExample'
+import ImageExample from './Examples/ImageExample';
 
 
 class Examples extends Component {
@@ -7,7 +8,7 @@ class Examples extends Component {
     return (
       <div className="exampleBox">
         <ParagraphExample />
-        {/* Perhaps here is where we will have React-Router for rendering the different element-pages */}
+        <ImageExample />
       </div>
     );
   }

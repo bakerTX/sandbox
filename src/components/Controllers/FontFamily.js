@@ -28,6 +28,9 @@ class FontFamily extends Component {
         <form>
           Serif<input onClick={this._changeFontFamily} name="font-family" value="serif" type="radio" ></input>
           Sans-Serif<input onClick={this._changeFontFamily} name="font-family" value="sans-serif" type="radio" ></input>
+          Impact<input onClick={this._changeFontFamily} name="font-family" value="impact" type="radio" ></input>
+          Monospace<input onClick={this._changeFontFamily} name="font-family" value="monospace" type="radio" ></input>
+          Comic Sans<input onClick={this._changeFontFamily} name="font-family" value="comic sans ms" type="radio" ></input>
         </form>
       </div>
     );

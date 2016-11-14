@@ -3,11 +3,19 @@ import ParagraphCB from './ControlBoards/ParagraphCB'
 
 
 class ControlBoard extends Component {
+
+
+  _renderWhat(){
+    let tab = this.props.whichPage()
+    if (tab === 'paragraph'){
+      return <ParagraphCB />
+    }
+  }
   render() {
     return (
       <div>
-        <ParagraphCB />
-        {/* Perhaps here is where we will have React-Router for rendering the different element-pages */}
+        {this._renderWhat()}
+        {/* <ParagraphCB /> */}
       </div>
     );
   }

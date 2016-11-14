@@ -7,6 +7,8 @@ class Examples extends Component {
   render() {
     return (
       <div className="exampleBox">
+
+        
         <ParagraphExample />
         <ImageExample />
       </div>

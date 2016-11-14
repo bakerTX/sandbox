@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './css/App.css';
 import Examples from './components/Examples';
 import ControlBoard from './components/ControlBoard';
-import CodeSnippet from './components/CodeSnippet';
 
 class App extends Component {
   render() {

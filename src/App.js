@@ -28,6 +28,7 @@ class App extends Component {
         <h1 className="header">The Sandbox</h1>
 
         <nav>
+          <a onClick={this._handleClick} href="#">home</a>
           <a onClick={this._handleClick} href="#">paragraph</a>
           <a onClick={this._handleClick} href="#">images</a>
           <a onClick={this._handleClick} href="#">animations</a>

@@ -3,7 +3,10 @@ import ParagraphCB from './ControlBoards/ParagraphCB'
 
 
 class ControlBoard extends Component {
-
+  constructor(props){
+    super(props);
+    this._renderWhat = this._renderWhat.bind(this);
+  }
 
   _renderWhat(){
     let tab = this.props.whichPage()
@@ -15,7 +18,6 @@ class ControlBoard extends Component {
     return (
       <div>
         {this._renderWhat()}
-        {/* <ParagraphCB /> */}
       </div>
     );
   }

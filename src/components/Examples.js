@@ -4,13 +4,20 @@ import ImageExample from './Examples/ImageExample';
 
 
 class Examples extends Component {
+  constructor(props){
+    super(props);
+    this._renderWhat = this._renderWhat.bind(this);
+  }
+  _renderWhat() {
+      let tab = this.props.whichPage()
+      if (tab === 'paragraph'){
+        return <ParagraphExample />
+      }
+  }
   render() {
     return (
       <div className="exampleBox">
-
-        
-        <ParagraphExample />
-        <ImageExample />
+        {this._renderWhat()}
       </div>
     );
   }

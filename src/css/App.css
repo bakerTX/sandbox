@@ -26,6 +26,17 @@ body {
   justify-content: center;
 }
 
+/*Controllers*/
+
+.controller-container {
+  background-color:red;
+  border: 1px solid black;
+  display:inline-block;
+  margin: 8px;
+  text-align:center;
+  padding:5px;
+}
+
 /*Nav Bar*/
 nav {
   display: flex;
@@ -51,7 +62,5 @@ nav a {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0 30%;
-
-
+  padding: 0 20%;
 }

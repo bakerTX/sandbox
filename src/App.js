@@ -17,7 +17,6 @@ class App extends Component {
 
         <ControlBoard />
         <Examples />
-        <div className="codeSnippetBox">Code Snippet Box</div>
 
       </div>
     );

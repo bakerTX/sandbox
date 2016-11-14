@@ -27,7 +27,7 @@ class FontFamily extends Component {
   }
   render() {
     return (
-      <div id="font-family-container">
+      <div className="controller-container">
         <p id="font-family-control">Font Family</p>
         <form>
           Serif<input onClick={this._changeFontFamily} name="font-family" value="serif" type="radio" ></input>

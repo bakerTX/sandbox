@@ -4,21 +4,17 @@ class LineHeight extends Component {
   constructor(props){
     super(props);
 
-    this.state = {
-      newSnippetNumber: 0
-    }
-
     this._changeLineHeight = this._changeLineHeight.bind(this);
     this._handleChange = this._handleChange.bind(this);
   }
   _handleChange(e){
+    let snippet = document.getElementById('line-height-snippet');
+    snippet.style.display = 'block';
     this._changeLineHeight(e);
     let newValue = e.target.value;
-    this.setState({
-      newSnippetNumber: newValue
-    })
 
-    this.props.changeSnippet(newValue)
+
+    this.props.changeSnippet('line-height',newValue)
   }
   _changeLineHeight(e){
     let lineHeight =e.target.value;

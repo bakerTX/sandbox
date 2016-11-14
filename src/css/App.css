@@ -18,13 +18,23 @@ body {
   height: 60vh;
   border: 1px solid black;
 }
-.codeSnippetBox {
+
+    /*SNIPPETS*/
+  #snippet-holder{
+    position: absolute;
+    top:0;
+    right:0;
+    background-color:red;
+  }
+
+
+/*.codeSnippetBox {
   height: 30vh;
   border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+}*/
 
 /*Controllers*/
 
@@ -64,3 +74,8 @@ nav a {
   align-items: center;
   padding: 0 20%;
 }
+
+/*#line-height-snippet {
+  position: absolute;
+  bottom: 0;
+}*/

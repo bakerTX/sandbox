@@ -18,7 +18,7 @@ class App extends Component {
 
         <ControlBoard />
         <Examples />
-        <CodeSnippet />
+        {/* <CodeSnippet /> */}
 
       </div>
     );

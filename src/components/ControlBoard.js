@@ -13,7 +13,7 @@ class ControlBoard extends Component {
     let tab = this.props.whichPage()
     if (tab === 'paragraph'){
       return <ParagraphCB />
-    } if (tab === 'images'){
+    } else if (tab === 'images'){
       return <ImagesCB />
     }
   }

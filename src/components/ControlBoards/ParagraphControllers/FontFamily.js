@@ -24,13 +24,13 @@ class FontFamily extends Component {
     return (
       <div className="controller-container">
         <p id="font-family-control">Font Family</p>
-        <form>
-          Serif<input onClick={this._changeFontFamily} name="font-family" value="serif" type="radio" ></input>
-          Sans-Serif<input onClick={this._changeFontFamily} name="font-family" value="sans-serif" type="radio" ></input>
-          Impact<input onClick={this._changeFontFamily} name="font-family" value="impact" type="radio" ></input>
-          Monospace<input onClick={this._changeFontFamily} name="font-family" value="monospace" type="radio" ></input>
-          Comic Sans<input onClick={this._changeFontFamily} name="font-family" value="comic sans ms" type="radio" ></input>
-        </form>
+        <select onChange={this._changeFontFamily}>
+          <option value="serif">serif</option>
+          <option value="sans-serif">sans-serif</option>
+          <option value="impact">impact</option>
+          <option value="monospace">monospace</option>
+          <option value="comic sans ms">comic sans</option>
+        </select>
       </div>
     );
   }

@@ -8,26 +8,72 @@ body {
   font-size: 42px;
 }
 
-/*The Controller Box*/
-.controllerBox{
-  position: relative;
-  height: 20vh;
-  border: 1px solid black;
+/*Nav Bar*/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
+nav a {
+  margin: 0 3%;
+  padding: 12px;
+  text-decoration: none;
+  border: 1px solid #AAAAAA;
+  border-bottom: none;
+  border-radius: 5px 5px 0px 0px;
+}
+
+/*The Controller Box*/
+.controllerBox {
+  width: 50%;
+  border: 1px solid black;
+  margin-bottom: 27px;
+  overflow:auto;
+}
+
+.controller-container {
+  /*border: 1px solid black;*/
+  display:inline-block;
+  margin: 8px;
+  text-align:center;
+  padding:5px;
+}
+#letter-spacing-container, #line-height-container {
+  float: right;
+  clear:right;
+}
+/*SNIPPETS*/
+#snippet-holder{
+position: absolute;
+border: 1px solid black;
+padding:24px 5%;
+top:160px;
+right:0;
+}
+#snippet-holder div{
+display:none;
+}
+
+/*Examples*/
 .exampleBox {
   height: 60vh;
   border: 1px solid black;
 }
 
-    /*SNIPPETS*/
-  #snippet-holder{
-    position: absolute;
-    top:0;
-    right:0;
-  }
-  #snippet-holder div{
-    display:none;
-  }
+/*Paragraph Example*/
+.paragraph-example {
+  margin-top:0;
+  text-align:center;
+}
+.paragraph-holder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+
 
 /*Image*/
 #supermoon{
@@ -43,61 +89,3 @@ body {
   align-items: center;
   justify-content: center;
 }*/
-
-/*Controllers*/
-
-.controller-container {
-  border: 1px solid black;
-  display:inline-block;
-  margin: 8px;
-  text-align:center;
-  padding:5px;
-}
-
-/*Nav Bar*/
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-nav a {
-  margin: 0 3%;
-  padding: 12px;
-  text-decoration: none;
-  border: 1px solid #AAAAAA;
-  border-bottom: none;
-  border-radius: 5px 5px 0px 0px;
-}
-
-/*Paragraph Example*/
-.paragraph-example {
-  margin-top:0;
-  text-align:center;
-}
-.paragraph-holder {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 10%;
-  overflow: hidden;
-}
-.image-holder {
-
-}
-
-/*#line-height-snippet {
-  position: absolute;
-  bottom: 0;
-}*/
-
-p {
-  margin-top: 0;
-}
-
-#font-family-container {
-  border: 1px solid black;
-  display:inline-block;
-  margin: 8px;
-  text-align:center;
-  padding:5px;
-}

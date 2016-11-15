@@ -23,7 +23,7 @@ class LineHeight extends Component {
   }
   render(){
     return(
-        <div className="controller-container">
+        <div id="line-height-container" className="controller-container">
           <p>Line Height</p>
           <input onChange={this._handleChange} type="range" step={0.1} min={1} max={5}></input>
         </div>

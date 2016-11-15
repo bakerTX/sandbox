@@ -8,47 +8,6 @@ body {
   font-size: 42px;
 }
 
-/*The Controller Box*/
-.controllerBox {
-  width: 50%;
-  border: 1px solid black;
-  margin-bottom: 27px;
-  overflow:auto;
-}
-
-
-#letter-spacing-container, #line-height-container {
-  float: right;
-  clear:right;
-}
-
-.exampleBox {
-  height: 60vh;
-  border: 1px solid black;
-}
-
-    /*SNIPPETS*/
-  #snippet-holder{
-    position: absolute;
-    border: 1px solid black;
-    padding:24px 5%;
-    top:160px;
-    right:0;
-  }
-  #snippet-holder div{
-    display:none;
-  }
-
-/*Controllers*/
-
-.controller-container {
-  /*border: 1px solid black;*/
-  display:inline-block;
-  margin: 8px;
-  text-align:center;
-  padding:5px;
-}
-
 /*Nav Bar*/
 nav {
   display: flex;
@@ -64,6 +23,43 @@ nav a {
   border-radius: 5px 5px 0px 0px;
 }
 
+/*The Controller Box*/
+.controllerBox {
+  width: 50%;
+  border: 1px solid black;
+  margin-bottom: 27px;
+  overflow:auto;
+}
+
+.controller-container {
+  /*border: 1px solid black;*/
+  display:inline-block;
+  margin: 8px;
+  text-align:center;
+  padding:5px;
+}
+#letter-spacing-container, #line-height-container {
+  float: right;
+  clear:right;
+}
+/*SNIPPETS*/
+#snippet-holder{
+position: absolute;
+border: 1px solid black;
+padding:24px 5%;
+top:160px;
+right:0;
+}
+#snippet-holder div{
+display:none;
+}
+
+/*Examples*/
+.exampleBox {
+  height: 60vh;
+  border: 1px solid black;
+}
+
 /*Paragraph Example*/
 .paragraph-example {
   margin-top:0;
@@ -76,3 +72,20 @@ nav a {
   padding: 0 10%;
   overflow: hidden;
 }
+
+
+
+/*Image*/
+#supermoon{
+  height: 100%;
+  width: 100%;
+}
+
+
+/*.codeSnippetBox {
+  height: 30vh;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/

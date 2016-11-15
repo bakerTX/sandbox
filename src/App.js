@@ -25,7 +25,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="header">The Sandbox</h1>
+        {/* <h1 className="header">The Sandbox</h1> */}
 
         <nav>
           <a onClick={this._handleClick} href="#">home</a>

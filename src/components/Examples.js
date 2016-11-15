@@ -12,6 +12,8 @@ class Examples extends Component {
       let tab = this.props.whichPage()
       if (tab === 'paragraph'){
         return <ParagraphExample />
+      } if (tab === 'images'){
+        return <ImageExample />
       }
   }
   render() {

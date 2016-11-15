@@ -47,7 +47,7 @@ nav a {
 position: absolute;
 border: 1px solid black;
 padding:24px 5%;
-top:160px;
+top:50px;
 right:0;
 }
 #snippet-holder div{
@@ -77,8 +77,17 @@ display:none;
 
 /*Image*/
 #supermoon{
-  height: 75%;
-  width: 75%;
+  height: 200px;
+}
+
+.image-holder {
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /*overflow: hidden;*/
 }
 
 

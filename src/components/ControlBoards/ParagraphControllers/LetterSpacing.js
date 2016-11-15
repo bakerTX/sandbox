@@ -21,7 +21,7 @@ class LetterSpacing extends Component {
     let letterSpacing = e.target.value;
     letterSpacing = letterSpacing.toString();
     letterSpacing += "px"
-    let paragraph = document.getElementById('paragraph-example');
+    let paragraph = document.getElementsById('paragraph-example');
     paragraph.style.letterSpacing = letterSpacing;
   }
   render() {

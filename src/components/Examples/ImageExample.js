@@ -5,7 +5,7 @@ class ImageExample extends Component {
   render() {
     return (
       <div className="image-holder">
-        <img src={'./images/Signature.jpg'} alt="signature" id="signature"/>
+        <img src={'./images/supermoon.jpeg'} alt="supermoon" id="supermoon"/>
       </div>
     );
   }

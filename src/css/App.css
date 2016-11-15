@@ -29,6 +29,12 @@ body {
     display:none;
   }
 
+/*Image*/
+#supermoon{
+  height: 100%;
+  width: 100%;
+}
+
 
 /*.codeSnippetBox {
   height: 30vh;
@@ -76,7 +82,7 @@ nav a {
   overflow: hidden;
 }
 .image-holder {
-  
+
 }
 
 /*#line-height-snippet {

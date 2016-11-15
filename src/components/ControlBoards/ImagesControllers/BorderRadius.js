@@ -9,20 +9,25 @@ class BorderRadius extends Component {
 
   _handleChange(e){
     let newValue = e.target.value;
+    this.props.changeSnippet('border-radius', newValue);
     this._changeBorderRadius(e);
   }
 
   _changeBorderRadius(e){
     let BorderRadius = e.target.value;
-    let image = document.getElementById('signature')
-    image.style.BorderRadius = BorderRadius;
+    BorderRadius += "px"
+    let image = document.getElementsByTagName('img')
+    console.log(image);
+    image.supermoon.style.borderRadius = BorderRadius;
+    console.log('Border Radius', BorderRadius);
+
   }
 
   render() {
     return (
       <div className="controller-container">
       <p>Border Radius</p>
-      <input onChange={this._handleChange} type="range" step={0.1} min={0.1} max={5}></input>
+      <input onChange={this._handleChange} type="range" step={0.1} min={0.1} max={150}></input>
       </div>
 
 

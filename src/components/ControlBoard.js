@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import ParagraphCB from './ControlBoards/ParagraphCB'
+import ParagraphCB from './ControlBoards/ParagraphCB';
+import ImagesCB from './ControlBoards/ImagesCB';
 
 
 class ControlBoard extends Component {
@@ -12,6 +13,8 @@ class ControlBoard extends Component {
     let tab = this.props.whichPage()
     if (tab === 'paragraph'){
       return <ParagraphCB />
+    } if (tab === 'images'){
+      return <ImagesCB />
     }
   }
   render() {

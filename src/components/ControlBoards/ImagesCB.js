@@ -7,9 +7,9 @@ class ControlBoard extends Component {
   constructor(props){
     super(props);
     this.state = {
-      BorderRadius: 0,
-      Filter: '',
-      Position: ''
+      newBorderRadius: 0,
+      newFilter: '',
+      newPosition: ''
     }
 
     this._changeSnippet = this._changeSnippet.bind(this);
@@ -49,12 +49,12 @@ class ControlBoard extends Component {
             {`border-radius: `}{this.state.newBorderRadius}{`px;`}
             </pre>
           </div>
-          <div id="letter-spacing-snippet">
+          <div id="filter-snippet">
             <pre>
             {`filter: `}{this.state.newFilter}{`;`}
             </pre>
           </div>
-          <div id="font-family-snippet">
+          <div id="position-snippet">
             <pre>
             {`position: `}{this.state.newPosition}{`;`}
             </pre>

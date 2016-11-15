@@ -9,11 +9,19 @@ body {
 }
 
 /*The Controller Box*/
-.controllerBox{
-  position: relative;
-  height: 20vh;
+.controllerBox {
+  width: 50%;
   border: 1px solid black;
+  margin-bottom: 27px;
+  overflow:auto;
 }
+
+
+#letter-spacing-container, #line-height-container {
+  float: right;
+  clear:right;
+}
+
 .exampleBox {
   height: 60vh;
   border: 1px solid black;
@@ -22,26 +30,19 @@ body {
     /*SNIPPETS*/
   #snippet-holder{
     position: absolute;
-    top:0;
+    border: 1px solid black;
+    padding:24px 5%;
+    top:160px;
     right:0;
   }
   #snippet-holder div{
     display:none;
   }
 
-
-/*.codeSnippetBox {
-  height: 30vh;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
-
 /*Controllers*/
 
 .controller-container {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   display:inline-block;
   margin: 8px;
   text-align:center;
@@ -52,7 +53,7 @@ body {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 }
 nav a {
   margin: 0 3%;
@@ -74,24 +75,4 @@ nav a {
   align-items: center;
   padding: 0 10%;
   overflow: hidden;
-}
-.image-holder {
-  
-}
-
-/*#line-height-snippet {
-  position: absolute;
-  bottom: 0;
-}*/
-
-p {
-  margin-top: 0;
-}
-
-#font-family-container {
-  border: 1px solid black;
-  display:inline-block;
-  margin: 8px;
-  text-align:center;
-  padding:5px;
 }

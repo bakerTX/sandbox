@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
-import Paragraph from './Paragraph'
+import ParagraphExample from './Examples/ParagraphExample'
+import ImageExample from './Examples/ImageExample';
 
 
 class Examples extends Component {
+  constructor(props){
+    super(props);
+    this._renderWhat = this._renderWhat.bind(this);
+  }
+  _renderWhat() {
+      let tab = this.props.whichPage()
+      if (tab === 'paragraph'){
+        return <ParagraphExample />
+      } if (tab === 'images'){
+        return <ImageExample />
+      }
+  }
   render() {
     return (
       <div className="exampleBox">
-        <Paragraph />
-        {/* Perhaps here is where we will have React-Router for rendering the different element-pages */}
+        {this._renderWhat()}
       </div>
     );
   }

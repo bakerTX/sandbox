@@ -24,7 +24,6 @@ body {
     position: absolute;
     top:0;
     right:0;
-    background-color:red;
   }
   #snippet-holder div{
     display:none;
@@ -42,7 +41,6 @@ body {
 /*Controllers*/
 
 .controller-container {
-  background-color:red;
   border: 1px solid black;
   display:inline-block;
   margin: 8px;
@@ -69,7 +67,6 @@ nav a {
 .paragraph-example {
   margin-top:0;
   text-align:center;
-
 }
 .paragraph-holder {
   height: 100%;
@@ -78,8 +75,23 @@ nav a {
   padding: 0 10%;
   overflow: hidden;
 }
+.image-holder {
+  
+}
 
 /*#line-height-snippet {
   position: absolute;
   bottom: 0;
 }*/
+
+p {
+  margin-top: 0;
+}
+
+#font-family-container {
+  border: 1px solid black;
+  display:inline-block;
+  margin: 8px;
+  text-align:center;
+  padding:5px;
+}

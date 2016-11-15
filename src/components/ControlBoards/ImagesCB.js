@@ -44,9 +44,9 @@ class ControlBoard extends Component {
           <pre>
             {`img {`}
           </pre>
-          <div id="line-height-snippet">
+          <div id="border-radius-snippet">
             <pre>
-            {`border-radius: `}{this.state.newBorderRadius}{`;`}
+            {`border-radius: `}{this.state.newBorderRadius}{`px;`}
             </pre>
           </div>
           <div id="letter-spacing-snippet">

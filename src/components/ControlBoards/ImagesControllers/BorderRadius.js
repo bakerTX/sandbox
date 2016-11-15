@@ -8,6 +8,10 @@ class BorderRadius extends Component {
   }
 
   _handleChange(e){
+
+    let snippet = document.getElementById('border-radius-snippet');
+    snippet.style.display = 'block';
+
     let newValue = e.target.value;
     this.props.changeSnippet('border-radius', newValue);
     this._changeBorderRadius(e);

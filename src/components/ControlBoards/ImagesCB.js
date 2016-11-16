@@ -9,7 +9,8 @@ class ControlBoard extends Component {
     this.state = {
       newBorderRadius: 0,
       newFilter: '',
-      newPosition: ''
+      newPosition: '',
+      newPositionMargin: 0
     }
 
     this._changeSnippet = this._changeSnippet.bind(this);
@@ -28,6 +29,10 @@ class ControlBoard extends Component {
     } else if (which === "position"){
       this.setState({
         newPosition: newValue
+      })
+    } else if (which === "position-margin"){
+      this.setState({
+        newPositionMargin: newValue
       })
     }
   }
@@ -58,12 +63,16 @@ class ControlBoard extends Component {
             <pre>
             {`position: `}{this.state.newPosition}{`;`}
             </pre>
+          <div id="position-margin-snippet">
+            <pre>
+            {`left: `}{this.state.newPositionMargin}{`px;`}
+            </pre>
           </div>
-
           <pre>
             {`}`}
           </pre>
         </div>
+      </div>
       </div>
     )
   }

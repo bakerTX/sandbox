@@ -4,6 +4,13 @@ body {
   margin: 0 auto;
   font-family: 'Quando', serif;
 }
+#logo {
+  background-image: url("../../public/images/logo.jpg");
+  background-size: contain;
+  min-height: 20vh;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
 /*Header*/
 .header{
   text-align: center;
@@ -150,7 +157,6 @@ nav a {
 }
 /*SNIPPETS*/
 #snippet-holder{
-/*position: absolute;*/
 background-color: rgb(40, 44, 52);
 border-left: 1px solid black;
 padding: 0 24px;
@@ -159,8 +165,7 @@ position:absolute;
 top:0;
 right:0;
 height:100%;
-/*top:50px;*/
-/*right:0;*/
+
 }
 #snippet-holder div{
 display:none;
@@ -203,6 +208,11 @@ pre{
   align-items: center;
   height: 100%;
   /*overflow: hidden;*/
+}
+
+pre {
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 

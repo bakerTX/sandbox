@@ -45,7 +45,6 @@ class ControlBoard extends Component {
         <Filter changeSnippet={this._changeSnippet}/>
 
         <div id="snippet-holder">
-
           <pre>
             {`img {`}
           </pre>

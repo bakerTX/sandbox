@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FontFamily from './ParagraphControllers/FontFamily';
 import LineHeight from './ParagraphControllers/LineHeight';
 import LetterSpacing from './ParagraphControllers/LetterSpacing';
+import TextDecoration from './ParagraphControllers/TextDecoration';
 
 class ControlBoard extends Component {
   constructor(props){
@@ -9,7 +10,8 @@ class ControlBoard extends Component {
     this.state = {
       newLineHeight: 0,
       newLetterSpacing: 0,
-      newFontFamily: ''
+      newFontFamily: '',
+      newTextDecoration: ''
     }
 
     this._changeSnippet = this._changeSnippet.bind(this);
@@ -29,6 +31,10 @@ class ControlBoard extends Component {
       this.setState({
         newFontFamily: newValue
       })
+    } else if (which === "text-decoration"){
+      this.setState({
+        newTextDecoration: newValue
+      })
     }
   }
 
@@ -38,6 +44,7 @@ class ControlBoard extends Component {
         <FontFamily changeSnippet={this._changeSnippet}/>
         <LineHeight changeSnippet={this._changeSnippet}/>
         <LetterSpacing changeSnippet={this._changeSnippet}/>
+        <TextDecoration changeSnippet={this._changeSnippet}/>
 
         <div id="snippet-holder">
 
@@ -57,6 +64,11 @@ class ControlBoard extends Component {
           <div id="font-family-snippet">
             <pre>
             {`font-family: `}{this.state.newFontFamily}{`;`}
+            </pre>
+          </div>
+          <div id="text-decoration-snippet">
+            <pre>
+            {`text-decoration: `}{this.state.newTextDecoration}{`;`}
             </pre>
           </div>
 

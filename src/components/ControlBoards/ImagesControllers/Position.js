@@ -36,7 +36,6 @@ class Position extends Component {
 
     let image = document.getElementById("supermoon");
     image.style.position = selectedPosition;
-
   }
 
 _changePositionMargin(e){

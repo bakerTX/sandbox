@@ -29,7 +29,7 @@ class App extends Component {
 
         <nav>
           <a onClick={this._handleClick} href="#">home</a>
-          <a onClick={this._handleClick} href="#">paragraph</a>
+          <a onClick={this._handleClick} href="#">text</a>
           <a onClick={this._handleClick} href="#">images</a>
         </nav>
 

@@ -27,7 +27,7 @@ class LetterSpacing extends Component {
   render() {
     return (
       <div id="letter-spacing-container" className="controller-container">
-      <p>letter spacing</p>
+      <p>Letter Spacing</p>
       <input onChange={this._handleChange} type="range" step={0.1} min={0.1} max={5}></input>
       </div>
     );

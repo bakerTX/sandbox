@@ -31,7 +31,7 @@ class BorderRadius extends Component {
     return (
       <div className="controller-container">
       <p>Border Radius</p>
-      <input onChange={this._handleChange} type="range" step={0.1} min={0.1} max={150}></input>
+      <input onChange={this._handleChange} type="range" step={0.1} min={0.1} max={100}></input>
       </div>
 
 

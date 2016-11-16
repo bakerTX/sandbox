@@ -47,11 +47,11 @@ class Filter extends Component {
       <p>Filter</p>
       <select onChange={this._changeFilter}>
          <option selected disabled>Filter</option>
-         <option value="grayscale">grayscale</option>
-         <option value="invert">invert</option>
-         <option value="opacity">opacity</option>
-         <option value="saturate">saturate</option>
-         <option value="sepia">sepia</option>
+         <option value="grayscale">Grayscale</option>
+         <option value="invert">Invert</option>
+         <option value="opacity">Opacity</option>
+         <option value="saturate">Saturate</option>
+         <option value="sepia">Sepia</option>
         </select>
         <input onChange={this._slidingChange} type="range" step={5} min={0} max={100}></input>
       </div>

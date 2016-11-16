@@ -10,7 +10,7 @@ class Examples extends Component {
   }
   _renderWhat() {
       let tab = this.props.whichPage()
-      if (tab === 'paragraph'){
+      if (tab === 'text'){
         return <ParagraphExample />
       } if (tab === 'images'){
         return <ImageExample />

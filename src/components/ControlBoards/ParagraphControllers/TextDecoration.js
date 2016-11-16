@@ -27,9 +27,9 @@ class TextDecoration extends Component {
         {/* <p id="font-family-control">Font Family</p> */}
         <select onChange={this._changeTextDecoration}>
           <option selected disabled>Text Decoration</option>
-          <option value="line-through">line-through</option>
-          <option value="underline">underline</option>
-          <option value="overline">overline</option>
+          <option value="line-through">Line-Through</option>
+          <option value="underline">Underline</option>
+          <option value="overline">Overline</option>
 
         </select>
       </div>

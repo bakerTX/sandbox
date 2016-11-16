@@ -26,11 +26,11 @@ class FontFamily extends Component {
         {/* <p id="font-family-control">Font Family</p> */}
         <select onChange={this._changeFontFamily}>
           <option selected disabled>Font Family</option>
-          <option value="serif">serif</option>
-          <option value="sans-serif">sans-serif</option>
-          <option value="impact">impact</option>
-          <option value="monospace">monospace</option>
-          <option value="comic sans ms">comic sans</option>
+          <option value="serif">Serif</option>
+          <option value="sans-serif">Sans-Serif</option>
+          <option value="impact">Impact</option>
+          <option value="monospace">Monospace</option>
+          <option value="comic sans ms">Comic Sans</option>
         </select>
       </div>
     );

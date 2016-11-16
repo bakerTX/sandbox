@@ -46,11 +46,14 @@ class ControlBoard extends Component {
   render(){
     return (
       <div className="controllerBox">
-        <FontFamily changeSnippet={this._changeSnippet}/>
-        <LineHeight changeSnippet={this._changeSnippet}/>
-        <LetterSpacing changeSnippet={this._changeSnippet}/>
-        <TextDecoration changeSnippet={this._changeSnippet}/>
-        <TextTransform changeSnippet={this._changeSnippet}/>
+        <div id="controllers">
+
+          <LineHeight changeSnippet={this._changeSnippet}/>
+          <LetterSpacing changeSnippet={this._changeSnippet}/>
+          <FontFamily changeSnippet={this._changeSnippet}/>
+          <TextDecoration changeSnippet={this._changeSnippet}/>
+          <TextTransform changeSnippet={this._changeSnippet}/>
+        </div>
 
         <div id="snippet-holder">
 

@@ -3,6 +3,7 @@ import FontFamily from './ParagraphControllers/FontFamily';
 import LineHeight from './ParagraphControllers/LineHeight';
 import LetterSpacing from './ParagraphControllers/LetterSpacing';
 import TextDecoration from './ParagraphControllers/TextDecoration';
+import TextTransform from './ParagraphControllers/TextTransform';
 
 class ControlBoard extends Component {
   constructor(props){
@@ -35,6 +36,10 @@ class ControlBoard extends Component {
       this.setState({
         newTextDecoration: newValue
       })
+    } else if (which === "text-transform"){
+      this.setState({
+        newTextTransform: newValue
+      })
     }
   }
 
@@ -45,6 +50,7 @@ class ControlBoard extends Component {
         <LineHeight changeSnippet={this._changeSnippet}/>
         <LetterSpacing changeSnippet={this._changeSnippet}/>
         <TextDecoration changeSnippet={this._changeSnippet}/>
+        <TextTransform changeSnippet={this._changeSnippet}/>
 
         <div id="snippet-holder">
 
@@ -69,6 +75,11 @@ class ControlBoard extends Component {
           <div id="text-decoration-snippet">
             <pre>
             {`text-decoration: `}{this.state.newTextDecoration}{`;`}
+            </pre>
+          </div>
+          <div id="text-transform-snippet">
+            <pre>
+            {`text-transform: `}{this.state.newTextTransform}{`;`}
             </pre>
           </div>
 

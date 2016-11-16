@@ -44,6 +44,12 @@ class ControlBoard extends Component {
         <Position changeSnippet={this._changeSnippet}/>
         <Filter changeSnippet={this._changeSnippet}/>
 
+        <div id="absolute-tooltip">
+
+          <p>Elements with the position property of absolute, requires that the parent container have the position property of relative.</p>
+
+        </div>
+
         <div id="snippet-holder">
           <pre>
             {`img {`}

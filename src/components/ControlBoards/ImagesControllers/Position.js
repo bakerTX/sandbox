@@ -11,6 +11,8 @@ class Position extends Component {
   }
 
   _handleChangePosition(e){
+    let slider = document.getElementById('position-slider');
+    slider.style.display = 'block';
 
     let snippet = document.getElementById('position-snippet');
     snippet.style.display = 'block';
@@ -57,7 +59,7 @@ _changePositionMargin(e){
          <option value="relative">Relative</option>
          </select>
 
-         <input onChange={this._handleChangeMargin} type="range" step={0.1} min={0.1} max={150}></input>
+         <input id="position-slider" onChange={this._handleChangeMargin} type="range" step={0.1} min={0.1} max={150}></input>
       </div>
     );
   }

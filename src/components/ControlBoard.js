@@ -11,7 +11,7 @@ class ControlBoard extends Component {
 
   _renderWhat(){
     let tab = this.props.whichPage()
-    if (tab === 'paragraph'){
+    if (tab === 'text'){
       return <ParagraphCB />
     } else if (tab === 'images'){
       return <ImagesCB />
@@ -19,7 +19,7 @@ class ControlBoard extends Component {
   }
   render() {
     return (
-      <div>
+      <div id="holds-controlboards">
         {this._renderWhat()}
       </div>
     );

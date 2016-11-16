@@ -50,11 +50,11 @@ _changePositionMargin(e){
   render() {
     return (
       <div className="controller-container">
-      <p>position</p>
+      <p>Position</p>
       <select onChange={this._handleChangePosition}>
          <option selected disabled>Position</option>
-         <option value="absolute">absolute</option>
-         <option value="relative">relative</option>
+         <option value="absolute">Absolute</option>
+         <option value="relative">Relative</option>
          </select>
 
          <input onChange={this._handleChangeMargin} type="range" step={0.1} min={0.1} max={150}></input>

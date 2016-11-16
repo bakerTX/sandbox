@@ -68,10 +68,11 @@ class ControlBoard extends Component {
             {`left: `}{this.state.newPositionMargin}{`px;`}
             </pre>
           </div>
+          </div>
           <pre>
             {`}`}
           </pre>
-        </div>
+
       </div>
       </div>
     )

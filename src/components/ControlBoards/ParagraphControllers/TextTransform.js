@@ -27,9 +27,9 @@ class TextTransform extends Component {
         {/* <p id="font-family-control">Font Family</p> */}
         <select onChange={this._changeTextTransform}>
           <option selected disabled>Text Transform</option>
-          <option value="uppercase">uppercase</option>
-          <option value="lowercase">lowercase</option>
-          <option value="capitalize">capitalize</option>
+          <option value="uppercase">Uppercase</option>
+          <option value="lowercase">Lowercase</option>
+          <option value="capitalize">Capitalize</option>
 
         </select>
       </div>

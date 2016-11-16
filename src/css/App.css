@@ -2,6 +2,13 @@ body {
   width: 90%;
   margin: 0 auto;
 }
+/*#logo {
+  background-image: url("/static/media/logo.da7635f9.jpg");
+  background-size: auto;
+  min-height: 60vh;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}*/
 /*Header*/
 .header{
   text-align: center;
@@ -46,9 +53,13 @@ nav a {
 #snippet-holder{
 position: absolute;
 border: 1px solid black;
-padding:24px 5%;
+padding:30px;
 top:50px;
-right:0;
+right:75px;
+height: 45px;
+width: 165px;
+margin-bottom: 27px;
+
 }
 #snippet-holder div{
 display:none;
@@ -88,6 +99,11 @@ display:none;
   align-items: center;
   height: 100%;
   /*overflow: hidden;*/
+}
+
+pre {
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 

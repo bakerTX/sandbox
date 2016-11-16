@@ -31,7 +31,6 @@ class App extends Component {
           <a onClick={this._handleClick} href="#">home</a>
           <a onClick={this._handleClick} href="#">paragraph</a>
           <a onClick={this._handleClick} href="#">images</a>
-          <a onClick={this._handleClick} href="#">animations</a>
         </nav>
 
         <ControlBoard whichPage={this._whichPage}/>

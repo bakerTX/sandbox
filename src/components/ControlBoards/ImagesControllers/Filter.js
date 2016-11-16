@@ -25,6 +25,9 @@ class Filter extends Component {
   }
 
   _changeFilter(e){
+    let slider = document.getElementById('filter-slider');
+    slider.style.display = 'block';
+
     let selectedFilter = e.target.value;
     console.log(selectedFilter);
 
@@ -46,14 +49,15 @@ class Filter extends Component {
       <div className="controller-container">
       <p>Filter</p>
       <select onChange={this._changeFilter}>
-         <option selected disabled>Filter</option>
+         <option selected disabled value="none">None</option>
          <option value="grayscale">Grayscale</option>
          <option value="invert">Invert</option>
          <option value="opacity">Opacity</option>
          <option value="saturate">Saturate</option>
          <option value="sepia">Sepia</option>
         </select>
-        <input onChange={this._slidingChange} type="range" step={5} min={0} max={100}></input>
+        <input id="filter-slider" onChange={this._slidingChange} type="range" step={5} min={0} max={100}></input>
+
       </div>
     );
   }

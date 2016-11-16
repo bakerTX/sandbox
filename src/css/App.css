@@ -5,7 +5,7 @@ body {
   font-family: 'Quando', serif;
 }
 #logo {
-  background-image: url("../../public/images/logo.jpg");
+  background-image: url("../../public/images/logo.png");
   background-size: contain;
   min-height: 20vh;
   background-repeat: no-repeat;
@@ -115,7 +115,7 @@ input[type=range]:focus::-ms-fill-upper {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 nav a {
   margin: 0 3%;
@@ -223,3 +223,16 @@ pre {
   align-items: center;
   justify-content: center;
 }*/
+
+#filter-slider {
+  display:none;
+}
+#position-slider {
+  display:none;
+}
+#absolute-tooltip {
+  display:inline-block;
+  border: 1px solid black;
+  width:400px;
+  height: 180px;
+}

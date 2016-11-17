@@ -25,14 +25,14 @@ body {
   position: absolute;
   max-height: 15vh;
   max-width: 15vh;
-  bottom: 600px;
-  left: 100px;
+  bottom: 530px;
+  left: 95px;
   transition-property: all;
 	transition-duration: .5s;
 	transition-timing-function: cubic-bezier(1, 1, 1, 1);
 }
 #logoImage:hover{
-  bottom: 630px;
+  bottom: 570px;
 }
 
 /*Header*/
@@ -314,7 +314,7 @@ pre {
   display:inline-block;
   position:absolute;
   top: 0;
-  right: 9%;
+  right: 17%;
   border: 1px solid black;
   width:120px;
   font-size:0.75em;

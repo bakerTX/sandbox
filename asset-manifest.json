@@ -1,7 +1,9 @@
 {
   "main.css": "static/css/main.5b858391.css",
   "main.css.map": "static/css/main.5b858391.css.map",
-  "main.js": "static/js/main.aa52ef07.js",
-  "main.js.map": "static/js/main.aa52ef07.js.map",
-  "static/media/fennecbucket.jpg": "static/media/fennecbucket.87cf4897.jpg"
+  "main.js": "static/js/main.7fe3494c.js",
+  "main.js.map": "static/js/main.7fe3494c.js.map",
+  "static/media/fennecbucket.jpg": "static/media/fennecbucket.87cf4897.jpg",
+  "static/media/fennecface.jpg": "static/media/fennecface.3a006d43.jpg",
+  "static/media/sandnoise.png": "static/media/sandnoise.1f396f51.png"
 }

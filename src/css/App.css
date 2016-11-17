@@ -157,6 +157,60 @@ nav a {
   border-radius: 5px 5px 0px 0px;
 }
 
+/*Home*/
+#homepage-content{
+  background: red;
+    background: -webkit-linear-gradient(#AB7200, #966400);
+    background: -o-linear-gradient(#AB7200, #966400);
+    background: -moz-linear-gradient(#AB7200, #966400);
+    background: linear-gradient(#AB7200, #966400);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width:90%;
+  height: 400px;
+  margin: 0 auto;
+  color: #E5C07B;
+  line-height: 40px;
+  text-align: center;
+  border: 5px ridge #ffaa00 ;
+  animation-name: welcome;
+  -webkit-animation: welcome 5s; /* Safari 4+ */
+  -moz-animation:    welcome 5s; /* Fx 5+ */
+  -o-animation:      welcome 5s; /* Opera 12+ */
+  animation:         welcome 5s; /* IE 10+, Fx 29+ */
+  /*padding: 0 10%;*/
+}
+/*@media (min-width: 1200px) {
+  #homepage-content {
+    padding: 0 30%;
+  }
+}*/
+@-webkit-keyframes welcome {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes welcome {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes welcome {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes welcome {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#homepage-content h1{
+  font-size: 30px;
+  text-shadow: 2px 2px #AB7200;
+  font-weight: bolder;
+}
+
+
 /*The Controller Box*/
 
 .controllerBox {

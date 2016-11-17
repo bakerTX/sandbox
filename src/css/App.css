@@ -22,7 +22,9 @@ select {
    font-size: 16px;
    height: 34px;
    width: 268px;
-}input[type=range] {
+}
+
+input[type=range] {
   -webkit-appearance: none;
   margin: 18px 0;
   width: 100%;

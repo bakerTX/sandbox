@@ -48,10 +48,21 @@ _changePositionMargin(e){
   let image = document.getElementById("supermoon");
   image.style.left = selectedPositionMargin;
 }
+  componentDidMount(){
+    let p = document.getElementById('position-controller');
+    console.log('p',p);
+    p.addEventListener('mouseover', function(){
+      console.log('hovering');
+      document.getElementById('absolute-tooltip').style.display = 'inline-block';
+    })
+    p.addEventListener('mouseout', function(){
+      document.getElementById('absolute-tooltip').style.display = 'none';
+    })
+  }
 
   render() {
     return (
-      <div className="controller-container">
+      <div id="position-controller" className="controller-container">
       <p>Position</p>
       <select onChange={this._handleChangePosition}>
          <option selected disabled>Position</option>

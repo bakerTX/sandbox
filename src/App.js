@@ -32,10 +32,10 @@ class App extends Component {
     } else {
       return (
         <div>
-      <ControlBoard whichPage={this._whichPage}/>
-      <Examples whichPage={this._whichPage}/>
+        <ControlBoard whichPage={this._whichPage}/>
+        <Examples whichPage={this._whichPage}/>
         </div>
-    )
+      )
     }
   }
   }

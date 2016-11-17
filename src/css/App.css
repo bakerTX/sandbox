@@ -36,39 +36,28 @@ a:hover{
   filter: blur(1px);
 }
 
-/*Logo Animation*/
-#whole-logo {
+/*Logo Old Animation*/
+#logoBucket {
   margin-top: 50px;
   background-image: url("../../public/images/fennecbucket.png");
   background-size: contain;
   min-height: 20vh;
-  width: 15vw;
+  width: 20vw;
   background-repeat: no-repeat;
   position: relative;
-  display:flex;
-  justify-content:center;
 }
 #logoImage {
-  /*position: absolute;*/
-  position:relative;
-  bottom:20px;
-  z-index:-1;
+  position: absolute;
   max-height: 15vh;
   max-width: 15vh;
-  /*top: 0;*/
-  /*left: 95px;*/
+  bottom: 540px;
+  left: 100px;
   transition-property: all;
 	transition-duration: .5s;
 	transition-timing-function: cubic-bezier(1, 1, 1, 1);
 }
-.animated {
-  bottom:20px;
-}
 #logoImage:hover{
-  bottom: 7%;
-}
-#whole-logo {
-  position:relative;
+  bottom: 565px;
 }
 
 /*Header*/
@@ -246,8 +235,6 @@ input[type=range]:focus::-ms-fill-upper {
   margin-top: 1px;
 }
 
-
-
 /*The Controller Box*/
 
 .controllerBox {
@@ -288,8 +275,6 @@ padding: 0 24px;
 display:inline-block;
 position:absolute;
 bottom: 0;
-
-
 }
 
 

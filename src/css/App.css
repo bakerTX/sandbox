@@ -12,34 +12,29 @@ body {
   font-family: 'Quando', serif;
 }
 /*Logo Animation*/
-.hithere {
-  animation: hithere 1s ease infinite;
-  animation-delay: 3s;
-  animation-iteration-count: 3;
-}
-@keyframes hithere {
-  30% { transform: scale(1.2); }
-  40%, 60% { transform: rotate(-5deg) scale(1.2); }
-  50% { transform: rotate(5deg) scale(1.2); }
-  70% { transform: rotate(0deg) scale(1.2); }
-  100% { transform: scale(1); }
-}
-
-
-#logo {
-  background-image: url("../../public/images/logoFinal.png");
+#logoBucket {
+  margin-top: 50px;
+  background-image: url("../../public/images/fennecbucket.png");
   background-size: contain;
   min-height: 20vh;
   width: 20vw;
   background-repeat: no-repeat;
-  /*margin: 0 auto;*/
-  /*animation-name: example;
-  animation-duration: 10s;
-  animation-iteration-count: 3;
-  webkit-animation-name: example;
-  webkit-animation-duration: 10s;
-  webkit-animation-iteration-count: 3;*/
+  position: relative;
 }
+img {
+  position: absolute;
+  max-height: 15vh;
+  max-width: 15vh;
+  bottom: 600px;
+  left: 100px;
+  transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(1, 1, 1, 1);
+}
+img:hover{
+  bottom: 630px;
+}
+
 /*Header*/
 .header{
   text-align: center;

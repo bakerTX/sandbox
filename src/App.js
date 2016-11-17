@@ -3,8 +3,8 @@ import './css/App.css';
 import Examples from './components/Examples';
 import ControlBoard from './components/ControlBoard';
 import Home from './components/Home';
-import fennec from './public/images/fennecface.jpg';
-import sand from './public/images/sandnoise.png';
+import fennec from '../public/images/fennecface.jpg';
+import sand from '../public/images/sandnoise.png';
 
 class App extends Component {
   constructor(props){

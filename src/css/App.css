@@ -50,14 +50,17 @@ a:hover{
   position: absolute;
   max-height: 15vh;
   max-width: 15vh;
-  bottom: 540px;
-  left: 100px;
+  top: 1%;
+  left: 8%;
   transition-property: all;
 	transition-duration: .5s;
 	transition-timing-function: cubic-bezier(1, 1, 1, 1);
 }
-#logoImage:hover{
-  bottom: 565px;
+/*#logoImage:hover{
+  top: -2%;
+}*/
+.animated {
+  top: -2%;
 }
 
 /*Header*/

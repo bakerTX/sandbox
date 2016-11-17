@@ -16,6 +16,20 @@ class App extends Component {
     this._whichPage = this._whichPage.bind(this);
     this._homeOrOther = this._homeOrOther.bind(this);
   }
+  componentDidMount(){
+    let bucket = document.getElementById('logoBucket');
+    bucket.addEventListener('mouseover',function(){
+      console.log('mousing over');
+      let fox = document.getElementById('logoImage');
+      console.log(fox);
+
+      fox.style.top = '-2%';
+    })
+    bucket.addEventListener('mouseout',function(){
+      let fox = document.getElementById('logoImage');
+      fox.style.top = '1%';
+    })
+  }
 
   _whichPage() {
     return this.state.tab
@@ -44,7 +58,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      
+
         {/* <h1 className="header">The Sandbox</h1> */}
 
 

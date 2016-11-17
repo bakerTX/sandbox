@@ -2,7 +2,7 @@
   "name": "sandbox",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://brymc.github.io/sandbox",
+  "homepage": "https://brymc.github.io/sandbox",
   "devDependencies": {
     "gh-pages": "^0.12.0",
     "react-scripts": "0.7.0"

@@ -44,7 +44,9 @@ class App extends Component {
       <div className="App">
         {/* <h1 className="header">The Sandbox</h1> */}
 
-        <nav>
+
+
+        <nav id="nav" className="homepage-content">
           <a onClick={this._handleClick} href="#">home</a>
           <a onClick={this._handleClick} href="#">text</a>
           <a onClick={this._handleClick} href="#">images</a>

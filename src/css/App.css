@@ -121,7 +121,7 @@ nav a {
   margin: 0 3%;
   padding: 12px;
   text-decoration: none;
-  border: 1px solid #AAAAAA;
+  border: 5px ridge #ffaa00;
   border-bottom: none;
   border-radius: 5px 5px 0px 0px;
 }
@@ -130,7 +130,7 @@ nav a {
 
 .controllerBox {
   width: 100%;
-  border: 1px solid black;
+  border: 5px ridge #ffaa00;
   margin-bottom: 27px;
   overflow:auto;
   position:relative;
@@ -177,7 +177,7 @@ pre{
 /*Examples*/
 .exampleBox {
   height: 60vh;
-  border: 1px solid black;
+  border: 5px ridge #ffaa00;
 }
 
 /*Paragraph Example*/

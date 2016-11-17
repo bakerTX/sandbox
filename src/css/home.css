@@ -1,0 +1,10 @@
+.hidden a {
+  border: none;
+  border-radius: 100px;
+  color: #E06665;
+}
+
+.hidden a:hover{
+  color: #AB7200;
+  filter: blur(1px);
+}

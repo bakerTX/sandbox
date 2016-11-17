@@ -153,23 +153,20 @@ nav a {
 }
 
 /*Home*/
-#homepage-content{
-  background: red;
-    background: -webkit-linear-gradient(#AB7200, #966400);
-    background: -o-linear-gradient(#AB7200, #966400);
-    background: -moz-linear-gradient(#AB7200, #966400);
-    background: linear-gradient(#AB7200, #966400);
+.homepage-content p{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width:90%;
+  width:40%;
   height: 400px;
   margin: 0 auto;
-  color: #E5C07B;
+  margin-top: 1px;
+  color: #AB7200;
   line-height: 40px;
   text-align: center;
-  border: 5px ridge #ffaa00 ;
   animation-name: welcome;
   -webkit-animation: welcome 5s; /* Safari 4+ */
   -moz-animation:    welcome 5s; /* Fx 5+ */
@@ -178,7 +175,7 @@ nav a {
   /*padding: 0 10%;*/
 }
 /*@media (min-width: 1200px) {
-  #homepage-content {
+  .homepage-content {
     padding: 0 30%;
   }
 }*/
@@ -199,11 +196,27 @@ nav a {
   100% { opacity: 1; }
 }
 
-#homepage-content h1{
-  font-size: 30px;
-  text-shadow: 2px 2px #AB7200;
-  font-weight: bolder;
+.homepage-content h1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #E5C07B;
+  font-size: 100px;
+  text-shadow: 5px 5px #AB7200;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 1px;
+  margin-top: 1px;
 }
+
+.homepage-content h1:hover{
+  text-shadow: 5px 5px #BC8311;
+}
+
+.homepage-content{
+  margin-top: 1px;
+}
+
 
 
 /*The Controller Box*/

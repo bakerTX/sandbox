@@ -130,6 +130,11 @@ nav a {
 
 /*Home*/
 #homepage-content{
+  background: red;
+    background: -webkit-linear-gradient(#AB7200, #966400);
+    background: -o-linear-gradient(#AB7200, #966400);
+    background: -moz-linear-gradient(#AB7200, #966400);
+    background: linear-gradient(#AB7200, #966400);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -137,7 +142,7 @@ nav a {
   width:90%;
   height: 400px;
   margin: 0 auto;
-  color: #E06665;
+  color: #E5C07B;
   line-height: 40px;
   text-align: center;
   border: 5px ridge #ffaa00 ;
@@ -168,6 +173,12 @@ nav a {
 @keyframes welcome {
   0%   { opacity: 0; }
   100% { opacity: 1; }
+}
+
+#homepage-content h1{
+  font-size: 30px;
+  text-shadow: 2px 2px #AB7200;
+  font-weight: bolder;
 }
 
 

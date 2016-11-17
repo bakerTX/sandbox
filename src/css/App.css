@@ -21,7 +21,7 @@ body {
   background-repeat: no-repeat;
   position: relative;
 }
-img {
+#logoImage {
   position: absolute;
   max-height: 15vh;
   max-width: 15vh;
@@ -31,7 +31,7 @@ img {
 	transition-duration: .5s;
 	transition-timing-function: cubic-bezier(1, 1, 1, 1);
 }
-img:hover{
+#logoImage:hover{
   bottom: 630px;
 }
 

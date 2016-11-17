@@ -39,7 +39,7 @@ a:hover{
 /*Logo Old Animation*/
 #logoBucket {
   margin-top: 50px;
-  background-image: url("../../public/images/fennecbucket.PNG");
+  background-image: url("../../public/images/fennecbucket.jpg");
   background-size: contain;
   min-height: 20vh;
   width: 20vw;

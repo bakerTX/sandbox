@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './css/App.css';
 import Examples from './components/Examples';
 import ControlBoard from './components/ControlBoard';
+import Home from './components/Home';
 
 class App extends Component {
   constructor(props){
@@ -9,18 +10,34 @@ class App extends Component {
     this.state = {
       tab: 'home'
     }
-
     this._handleClick = this._handleClick.bind(this);
     this._whichPage = this._whichPage.bind(this);
+    this._homeOrOther = this._homeOrOther.bind(this);
   }
+
   _whichPage() {
     return this.state.tab
   }
+
+
   _handleClick(e) {
     let tab = e.target.innerText
     this.setState({
       tab: tab
     })
+  }
+  _homeOrOther(){
+    {if (this.state.tab === 'home') {
+      return <Home />
+    } else {
+      return (
+        <div>
+      <ControlBoard whichPage={this._whichPage}/>
+      <Examples whichPage={this._whichPage}/>
+        </div>
+    )
+    }
+  }
   }
   render() {
     return (
@@ -33,8 +50,8 @@ class App extends Component {
           <a onClick={this._handleClick} href="#">images</a>
         </nav>
 
-        <ControlBoard whichPage={this._whichPage}/>
-        <Examples whichPage={this._whichPage}/>
+        {this._homeOrOther()}
+
         {/* <CodeSnippet /> */}
 
       </div>

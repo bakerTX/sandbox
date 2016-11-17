@@ -317,7 +317,15 @@ pre {
 }
 #absolute-tooltip {
   display:inline-block;
+  position:absolute;
+  top: 0;
+  right: 9%;
   border: 1px solid black;
-  width:400px;
-  height: 180px;
+  width:120px;
+  font-size:0.75em;
+  padding:12px;
+  margin:12px;
+}
+#absolute-tooltip span {
+  padding:1px;
 }

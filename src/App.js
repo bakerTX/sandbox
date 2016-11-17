@@ -31,7 +31,7 @@ class App extends Component {
       return <Home />
     } else {
       return (
-        <div>
+        <div id="main-content">
         <ControlBoard whichPage={this._whichPage}/>
         <Examples whichPage={this._whichPage}/>
         </div>

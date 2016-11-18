@@ -56,12 +56,12 @@ a:hover{
 	transition-duration: .5s;
 	transition-timing-function: cubic-bezier(1, 1, 1, 1);
 }
-/*#logoImage:hover{
-  top: -2%;
-}*/
-.animated {
+#logoImage:hover{
   top: -2%;
 }
+/*.animated {
+  top: -2%;
+}*/
 
 /*Header*/
 .header{

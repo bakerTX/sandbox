@@ -7,8 +7,6 @@ class LetterSpacing extends Component {
     this._handleChange = this._handleChange.bind(this);
   }
   _handleChange(e){
-    //reset other displayed snippets
-
     // show the div containing the snippet -- hidden by default
     let snippet = document.getElementById('letter-spacing-snippet');
     snippet.style.display = 'block';

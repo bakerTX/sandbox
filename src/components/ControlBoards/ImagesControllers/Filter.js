@@ -11,7 +11,7 @@ class Filter extends Component {
   _slidingChange(e){
     let value = e.target.value;
     // console.log(value);
-    let image = document.getElementById('supermoon');
+    let image = document.getElementById('jedi');
     let previousFilter = image.style.filter;
     previousFilter = previousFilter.split('(');
     // console.log(previousFilter);
@@ -31,7 +31,7 @@ class Filter extends Component {
     let selectedFilter = e.target.value;
     console.log(selectedFilter);
 
-    let image = document.getElementById("supermoon");
+    let image = document.getElementById("jedi");
     console.log('style', image.style);
     console.log('filter', image.style.filter);
     image.style.filter = selectedFilter + `(50%)`;

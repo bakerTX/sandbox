@@ -10,7 +10,6 @@ class Home extends Component {
     let nav = document.getElementById('nav')
     nav.className = "";
   }
-
   render() {
     return (
       <div className="homepage-content" >

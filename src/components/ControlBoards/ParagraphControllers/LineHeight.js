@@ -13,7 +13,6 @@ class LineHeight extends Component {
     this._changeLineHeight(e);
     let newValue = e.target.value;
 
-
     this.props.changeSnippet('line-height',newValue)
   }
   _changeLineHeight(e){
@@ -27,8 +26,6 @@ class LineHeight extends Component {
           <p>Line Height</p>
           <input onChange={this._handleChange} type="range" step={0.1} min={1} max={5}></input>
         </div>
-
-
     )
   }
 }

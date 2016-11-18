@@ -5,7 +5,6 @@ class TextDecoration extends Component {
     super(props);
     this._changeTextDecoration = this._changeTextDecoration.bind(this);
   }
-
   _changeTextDecoration(e){
       let selectedTextDecoration = e.target.value;
 
@@ -20,11 +19,9 @@ class TextDecoration extends Component {
       let snippet = document.getElementById('text-decoration-snippet');
       snippet.style.display = 'block';
   }
-
   render() {
     return (
       <div id="text-decoration-container" className="controller-container">
-        {/* <p id="font-family-control">Font Family</p> */}
         <select onChange={this._changeTextDecoration}>
           <option selected disabled>Text Decoration</option>
           <option value="line-through">Line-Through</option>

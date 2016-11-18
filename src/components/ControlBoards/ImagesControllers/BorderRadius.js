@@ -22,7 +22,7 @@ class BorderRadius extends Component {
     BorderRadius += "px"
     let image = document.getElementsByTagName('img')
     console.log(image);
-    image.supermoon.style.borderRadius = BorderRadius;
+    image.jedi.style.borderRadius = BorderRadius;
     console.log('Border Radius', BorderRadius);
 
   }

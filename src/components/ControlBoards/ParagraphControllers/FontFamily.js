@@ -23,7 +23,6 @@ class FontFamily extends Component {
   render() {
     return (
       <div id="font-family-container" className="controller-container">
-        {/* <p id="font-family-control">Font Family</p> */}
         <select onChange={this._changeFontFamily}>
           <option selected disabled>Font Family</option>
           <option value="serif">Serif</option>

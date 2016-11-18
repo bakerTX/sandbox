@@ -36,7 +36,7 @@ class Position extends Component {
     let selectedPosition = e.target.value;
     console.log(selectedPosition);
 
-    let image = document.getElementById("supermoon");
+    let image = document.getElementById("jedi");
     image.style.position = selectedPosition;
   }
 
@@ -45,7 +45,7 @@ _changePositionMargin(e){
   selectedPositionMargin += "px"
   console.log(selectedPositionMargin);
 
-  let image = document.getElementById("supermoon");
+  let image = document.getElementById("jedi");
   image.style.left = selectedPositionMargin;
 }
   componentDidMount(){

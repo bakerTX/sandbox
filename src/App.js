@@ -16,26 +16,9 @@ class App extends Component {
     this._whichPage = this._whichPage.bind(this);
     this._homeOrOther = this._homeOrOther.bind(this);
   }
-  // componentDidMount(){
-  //   let bucket = document.getElementById('logoBucket');
-  //   bucket.addEventListener('mouseover',function(){
-  //     console.log('mousing over');
-  //     let fox = document.getElementById('logoImage');
-  //     console.log(fox);
-  //
-  //     fox.style.top = '-2%';
-  //   })
-  //   bucket.addEventListener('mouseout',function(){
-  //     let fox = document.getElementById('logoImage');
-  //     fox.style.top = '1%';
-  //   })
-  // }
-
   _whichPage() {
     return this.state.tab
   }
-
-
   _handleClick(e) {
     let tab = e.target.innerText
     this.setState({
@@ -54,28 +37,18 @@ class App extends Component {
       )
     }
   }
-  }
+}
   render() {
     return (
       <div className="App">
-
-        {/* <h1 className="header">The Sandbox</h1> */}
-
-
-
         <nav id="nav" className="homepage-content">
           <a onClick={this._handleClick} href="#">home</a>
           <a onClick={this._handleClick} href="#">text</a>
           <a onClick={this._handleClick} href="#">images</a>
         </nav>
-
         {this._homeOrOther()}
-
-        {/* <CodeSnippet /> */}
-
       </div>
     );
   }
 }
-
 export default App;

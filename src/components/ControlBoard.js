@@ -8,7 +8,6 @@ class ControlBoard extends Component {
     super(props);
     this._renderWhat = this._renderWhat.bind(this);
   }
-
   _renderWhat(){
     let tab = this.props.whichPage()
     if (tab === 'text'){

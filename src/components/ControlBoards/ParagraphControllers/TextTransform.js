@@ -5,7 +5,6 @@ class TextTransform extends Component {
     super(props);
     this._changeTextTransform = this._changeTextTransform.bind(this);
   }
-
   _changeTextTransform(e){
       let selectedTextTransform = e.target.value;
 
@@ -20,7 +19,6 @@ class TextTransform extends Component {
       let snippet = document.getElementById('text-transform-snippet');
       snippet.style.display = 'block';
   }
-
   render() {
     return (
       <div id="text-transform-container" className="controller-container">
